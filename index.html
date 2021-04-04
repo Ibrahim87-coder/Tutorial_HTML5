@@ -1,0 +1,289 @@
+<!--  for support browser -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="description" content="This is our book store" />
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+    <h1>Book Store</h1>
+    This is My Book Store
+    <!-- 
+        b => Bold
+        strong => Bold => Important text
+        i ==> italic
+        em ==> Emphasized
+        mark ==> highlight
+        u ==> underline
+        small ==> smaller text
+        del ==> Deleted Text (mashtoub bl nos)
+        ins ==\> inserted text (idafa jdide lal web)
+        sub ==> Subscript 
+        sup ==> Supscript
+     -->
+    <p>We have a big sale</p>
+    <p>Welcome</p>
+    <!-- p is block element // bi2atesh sater -->
+    <!--
+         global  attribute like class , id , hidden ...
+         element attribute like
+             1. (src & alt to img)
+             2. (href to a)
+    -->
+    <p>This is my <b>Book Store</b> ,Welcome</p>
+    <p>This is my <strong>Book Store</strong> ,Welcome</p>
+
+    <!-- a is inline element  -->
+    <!-- 
+         _blank ==> open in new tab
+         href="mailto: email@gmail.com" ==> open email application
+         title : tooltip
+      -->
+    <a href="http://google.com" target="_blank" title="Go to Google">Google</a>
+
+    <!-- alt text appear when image isn't loaded -->
+    <img src="http://google.com/favicon.ico" alt="Google icon" />
+
+    <!-- 
+          ul ==> unorderd list
+          ol ==> ordered list
+          li ==> List item
+
+          reversed ==> Reversed The ordering
+          Start ==> Start from position
+          type=> Type of ordering
+       -->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>
+        JavaScript
+        <ul>
+          <li>Angular</li>
+          <li>ReactJS</li>
+          <li>VueJs</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol start="15">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+
+    <!-- 
+           dl ==> description list
+           dt ==>  Term
+           dd ==> description term 
+        -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>Language of the web</dd>
+    </dl>
+
+    <!-- 
+            thead
+            tbody
+            tfoot
+
+            tr ==> Table row
+            td ==> Table data cell
+            th ==> Table Header Cell
+
+            caption ==> Title of table
+         -->
+    <table>
+      <caption>
+        Students Marks
+      </caption>
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Last</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Osama</td>
+          <td>Osama</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Osama</td>
+          <td>Osama</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Osama</td>
+          <td>Osama</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Osama</td>
+          <td>Osama</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <!-- <td>Total</td> -->
+          <td colspan="2">Total</td>
+          <td>160</td>
+          <!-- colspan ==> to merge cells -->
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- 
+            span is inline element
+            the goal of span is customise any word or paragraphe in html
+
+            br ==> Break element (block element)
+
+            hr ==> Horizontal row (block element)
+         -->
+    <span>Word</span>
+    <br />
+    <hr />
+
+    <div>
+      <h1>Book Store</h1>
+      This is My Book Store
+    </div>
+
+    <!--
+              <p> ==> &lt; p &gt;
+
+            Search google for html entities
+        
+        
+            -->
+    <div>This is my &lt; p &gt; Div</div>
+
+    <!--Like div (block element)  -->
+    <header></header>
+    <nav></nav>
+    <section></section>
+    <!-- figure image & her caption -->
+    <figure>
+      <img src="" alt="" />
+      <figcaption></figcaption>
+    </figure>
+
+    <article></article>
+    <aside></aside>
+    <footer></footer>
+
+    <!-- Audio tag -->
+    <audio controls autoplay loop muted>
+      <!-- bibarem l browser 3n aya aktr no3 mnih w by3mlu play -->
+      <source src="audio.mp3" type="audio/mpeg" />
+      <source src="audio.ogg" type="audio/ogg" />
+      <source src="audio.wav" type="audio/wav" />
+      Your Browser Doesn't support audio tags
+    </audio>
+
+    <!-- Video tag -->
+    <video
+      controls
+      width="400"
+      height="200"
+      autoplay
+      loop
+      muted
+      poster="img.png"
+    >
+      <!-- poster for image before loading -->
+      <source src="audio.mp4" type="audio/mp4" />
+      Your Browser Doesn't support video tags
+      <!-- nafes l idea tb3it audio -->
+      <track
+        src="myfile_rng.vvt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+      />
+      <track src="myfile_ar.vvt" kind="subtitles" srclang="ar" label="arabic" />
+      <!-- subtitles -->
+    </video>
+
+    <hr />
+
+    <form action="" method="GET">
+      <!-- GET method ==> data is in url -->
+      <!-- POST method ==> data isn't in url -->
+
+      <!--
+                 R.C ==> Inspect Elements ==> Network ==> Headers ==> index.html
+             -->
+
+      <!-- action="ibrahim.php" data to ibrahim.php -->
+      <label>Username</label>
+      <input
+        type="text"
+        name="user"
+        value="username"
+        readonly
+        required
+        placeholder="username"
+      />
+      <br />
+
+      <label>Password</label>
+      <input
+        type="password"
+        autofocus
+        minlength="10"
+        name="pass"
+        required
+        placeholder="password"
+      />
+      <br />
+
+      <label>Email</label>
+      <input
+        type="email"
+        disabled
+        name="email"
+        value="o@snn.com"
+        required
+        placeholder="email"
+      />
+      <br />
+
+      <input type="hidden" />
+      <input type="Reset" />
+      <!-- reset data -->
+      <input type="color" />
+      <input type="range" min="0" max="100" step="20" value="0" />
+      <input type="number" name="number" min="0" />
+      <input type="submit" value="Save" />
+
+      <!-- 
+                 Read only (post data)
+                 disabled  (!post data)
+             -->
+      <hr />
+             
+
+      <div>
+          <input id="win" type="radio" name="os" value="Windows"checked />
+          <label for="win" >Windows</label>
+          <!-- for (id) -->
+          
+          <input type="radio" name="os" value="MAC" />
+          <label>MAC</label>
+          <input type="radio" name="os" value="Linux" />
+          <label>Linux</label>
+      </div>
+      <!--  -->
+    </form>
+  </body>
+</html>
