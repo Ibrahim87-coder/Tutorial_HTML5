@@ -216,7 +216,11 @@
 
     <hr />
 
-    <form action="" method="GET">
+    <form action="" method="GET" novalidate target="_blank">
+
+        <!-- novalidate && target ==> for testing -->
+    
+        
       <!-- GET method ==> data is in url -->
       <!-- POST method ==> data isn't in url -->
 
@@ -284,6 +288,79 @@
           <label>Linux</label>
       </div>
       <!--  -->
+      <label for="book">Choose Book:</label>
+      <select name="books" id="book" multiple>
+          <!-- Press ctrl to select many books -->
+          <option value="1" selected>Book 1</option>
+          <option value="2">Book 2</option>
+          <optgroup label="Police Books">
+            <option value="3">Book 3</option>
+            <option value="4">Book 4</option>
+            <option value="5">Book 5</option>  
+          </optgroup>
+          <!-- post data in value -->
+      </select>
+
+      <hr>
+
+      <textarea name="subject" id="" cols="30" rows="10" placeholder="Text"></textarea>
+      <hr>
+
+        <div>
+            <label for="">Upload</label>
+            <input type="file">
+        </div>
+
+        <hr>
+
+        <div>
+            <label for="">Upload</label>
+            <input type="search">
+        </div>
+        
+        <hr>
+
+        <div>
+            <label for="">URL</label>
+            <input type="url">
+        </div>
+
+        <hr>
+
+        <div>
+            <label for="">Date</label>
+            <input type="date">
+        </div>
+
+        <hr>
+
+        <div>
+            <label for="">Time</label>
+            <input type="time">
+        </div>
+
+        <hr>
+
+        <input list="programming" name="prog">
+                <datalist id="programming">
+                    <option value="Python"></option>
+                    <option value="html"></option>
+                    <option value="css"></option>
+                    <option value="Php"></option>
+                    <option value="C"></option>
+                    <option value="kotlin"></option>
+                    <option value="java"></option>
+                    <option value="JavaScript"></option>
+                    <option value="C++"></option>
+                    <option value="C sharp"></option>
+                    <option value="Scala"></option>
+                    <!-- List with search option -->
+
+                </datalist>
+
+
+
+
     </form>
   </body>
 </html>
